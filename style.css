@@ -324,3 +324,133 @@ a {
   margin-bottom: 5px;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar ul li {
+    margin-left: 40px;
+  }
+
+  .home {
+    flex-direction: column;
+    padding: 60px 5% 0;
+    height: auto;
+    text-align: center;
+  }
+
+  .home-img {
+    margin: 30px 0 0 0;
+  }
+
+  .home-img .img-box {
+    width: 35vw;
+    height: 35vw;
+  }
+
+  .home-info h1 {
+    font-size: 40px;
+  }
+
+  .home-info h2 {
+    font-size: 28px;
+    margin-top: -5px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+  }
+
+  .home-info .btn-sci {
+    flex-direction: column;
+  }
+
+  .home-info .btn-sci .sci {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .edu, .progress {
+    padding: 30px 10px;
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .card:hover {
+    height: auto;
+  }
+}
+
+/* ===== Responsive for Mobile Phones (max-width 480px) ===== */
+@media screen and (max-width: 480px) {
+  .navbar ul {
+    flex-direction: column;
+    background-color: #1f242d;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .navbar ul li {
+    margin: 15px 0;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
+  }
+
+  .home-info h1 {
+    font-size: 32px;
+  }
+
+  .home-info h2 {
+    font-size: 22px;
+  }
+
+  .home-info p {
+    font-size: 14px;
+  }
+
+  .home-img .img-box {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .btn {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+
+  .btn:hover {
+    font-size: 20px;
+  }
+
+  .scroll-down {
+    width: 40px;
+    height: 40px;
+  }
+
+  .scroll-down i {
+    font-size: 22px;
+  }
+
+  .progress h2, .container h2 {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 16px;
+  }
+
+  .skill .status {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+}
