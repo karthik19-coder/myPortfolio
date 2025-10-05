@@ -198,7 +198,7 @@ a {
   display: block;
   width: 85%;
   object-fit: cover;
-  mix-blend-mode: luminosity;
+  mix-blend-mode: normal;
 }
 
 .home-img .img-box:hover {
