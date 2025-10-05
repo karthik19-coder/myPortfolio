@@ -324,7 +324,7 @@ a {
   margin-bottom: 5px;
   font-weight: 600;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 300px) {
   .navbar {
     padding: 15px 5%;
   }
@@ -371,7 +371,8 @@ a {
     margin-top: 10px;
   }
 
-  .edu, .progress {
+  .edu,
+  .progress {
     padding: 30px 10px;
   }
 
@@ -441,7 +442,8 @@ a {
     font-size: 22px;
   }
 
-  .progress h2, .container h2 {
+  .progress h2,
+  .container h2 {
     font-size: 24px;
   }
 
@@ -454,14 +456,14 @@ a {
     padding: 4px 8px;
   }
 }
-
+/* ===== Mobile layout: image first, navbar second, text last ===== */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 0; 
+    padding-top: 0; /* remove top padding since navbar moves down */
   }
 
   .navbar {
-    position: static; 
+    position: static; /* remove fixed position so it flows naturally */
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -492,7 +494,7 @@ a {
 
   .navbar {
     order: 2;
-    background: transparent; 
+    background: transparent; /* so it looks cleaner below image */
   }
 
   .home-info {
