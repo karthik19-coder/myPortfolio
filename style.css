@@ -23,7 +23,6 @@ a {
   left: 0;
   width: 100%;
   padding: 15px 9%;
-  /* border-bottom: 1px solid gray; */
   background-color: #1f242d;
   display: flex;
   justify-content: space-between;
@@ -316,10 +315,8 @@ a {
 }
 
 .skill .status {
-  /* border: 2px solid rgb(248, 242, 242); */
   padding: 5px 10px;
   border-radius: 40px;
-  /* background-color: red; */
   box-shadow: 0 0 10px red;
   margin-bottom: 5px;
   font-weight: 600;
@@ -387,7 +384,6 @@ a {
   }
 }
 
-/* ===== Responsive for Mobile Phones (max-width 480px) ===== */
 @media screen and (max-width: 480px) {
   .navbar ul {
     flex-direction: column;
@@ -426,7 +422,7 @@ a {
 
   .btn {
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .btn:hover {
@@ -456,14 +452,13 @@ a {
     padding: 4px 8px;
   }
 }
-/* ===== Mobile layout: image first, navbar second, text last ===== */
 @media screen and (max-width: 768px) {
   body {
-    padding-top: 0; /* remove top padding since navbar moves down */
+    padding-top: 0;
   }
 
   .navbar {
-    position: static; /* remove fixed position so it flows naturally */
+    position: static;
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -481,6 +476,7 @@ a {
   .home-img {
     order: 1;
     margin-top: 20px;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -494,7 +490,7 @@ a {
 
   .navbar {
     order: 2;
-    background: transparent; /* so it looks cleaner below image */
+    background: transparent;
   }
 
   .home-info {
@@ -505,19 +501,39 @@ a {
 
   .home-info h1 {
     font-size: 30px;
+    margin-bottom: 10px;
   }
 
   .home-info h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .home-info p {
-    font-size: 14px;
-    margin: 10px 0 20px;
+    font-size: 12px;
+    margin: 10px 15px 20px;
+    text-align: center;
+  }
+  .home-info .btn-sci .sci a {
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 2px;
+    font-size: 20px;
+  }
+  .home-info .btn-sci .sci a:hover {
+    background-color: red;
+    color: white;
+    font-size: 21px;
+    box-shadow: 0 0 10px red;
   }
 
   .btn {
     padding: 8px 20px;
-    font-size: 18px;
+    font-size: 14px;
+  }
+  .btn:hover {
+    background: transparent;
+    color: red;
+    box-shadow: none;
+    font-size: 15px;
   }
 }
